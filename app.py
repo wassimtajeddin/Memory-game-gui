@@ -5,7 +5,7 @@ class MemoryGame:
     def __init__(self, root):
         self.root = root
         self.root.title("Memory Game")
-        self.root.geometry("400x300")
+        self.root.geometry("250x450")
 
         self.cards = list(range(1, 9)) * 2
         random.shuffle(self.cards)
@@ -14,6 +14,7 @@ class MemoryGame:
 
         self.title = tk.Label(root, text="Memory Game", font=("Arial", 16))
         self.title.grid(row=0, column=0, columnspan=4, pady=20)
+        
 
         self.buttons = []
         for row in range(1, 5):
